@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merriweather+Sans&family=Open+Sans:wght@300;700&family=Poppins:wght@200;400&family=Roboto:wght@100;300;400;700&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+
+:root{
+  --blackBlue-1: #1A222E;
+  --blackBlue-2: #0d1117;
+  --blackBlue-3: #090C10; /* darkest */
+  --bg-stylish-grey:#0b0c10 ;
+  --bg-violet-gradient:#0C0032;
+  --bg-linear-gradient:linear-gradient(#04091ecc,#04091e66), #000;
+  --color-primary:rgb(38, 255, 0);
+  --color-secondary:cyan;
+  --color-trinary:rgb(255, 0, 140);
+  --font-family-paragraph: Inter;
+  --font-family-primary:open sans;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins;
+    text-decoration: none;
+
+}
+
+.coders-mt{
+
+  font-family:var(--font-family-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.coders-mt span{
+  font-family:var(--font-family-primary);
+  font-weight: 500;
+}
+
+@keyframes slide {
+  0% {transform:translateX(-100%);}
+  50%{ transform:translateX(50%); }
+  100% {transform:translateX(100%);}
+}
+p{
+  font-family:var(--font-family-paragraph);
+}
+
+.card-basic > a{
+  background: linear-gradient(to right,rgb(0, 154, 205),rgb(16, 255, 116));
+}
+
+.card-premium > a{
+  background: linear-gradient(to right,rgb(255, 180, 41),rgb(255, 119, 0));
+}
+.card{
+  transition: .1s linear;
+}
+.card:hover{
+  transform: scale(1.019) translateY(-.5rem);
+
+}
+
+.loading-screen{
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.loader {
+  color: #000000;
+  font-size: 10px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
